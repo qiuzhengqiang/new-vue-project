@@ -2,19 +2,14 @@
   <div id="app">
     <el-container>
       <el-header>
-
+          <h4>我目前是打算做一个记账的APP</h4>
       </el-header>
       <el-container>
-        <el-aside width="150px">
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
+        <el-aside >
+          <router-view name="sidebar"></router-view>
         </el-aside>
         <el-main>
-          <router-view/>
+          <router-view></router-view>
         </el-main>
       </el-container>
 
